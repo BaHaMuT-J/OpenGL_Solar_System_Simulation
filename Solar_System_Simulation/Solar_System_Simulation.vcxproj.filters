@@ -76,6 +76,7 @@
     <None Include="solar.fs" />
     <None Include="solar.vs" />
     <None Include="sun.fs" />
+    <None Include="..\README.md" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="build\include\header\camera.h">

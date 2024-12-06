@@ -169,6 +169,7 @@
     <ClCompile Include="Sphere.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\README.md" />
     <None Include="solar.fs" />
     <None Include="solar.vs" />
     <None Include="sun.fs" />

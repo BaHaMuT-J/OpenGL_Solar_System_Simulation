@@ -68,7 +68,7 @@ int solarScaledSize()
 
     // scale radius for visibility
     float mult = 10000.0;
-    Sphere sun(SUN_RADIUS * mult), // true scale sun is too big
+    Sphere sun(SUN_RADIUS * mult),
         mercury(MERCURY_RADIUS * mult),
         venus(VENUS_RADIUS * mult),
         earth(EARTH_RADIUS * mult),
@@ -182,7 +182,7 @@ int solarScaledSize()
         float start = 25.0;
 
         model = glm::mat4(1.0f);
-        //model = glm::rotate(model, (float)glfwGetTime() / MERCURY_ORBITAL_PERIOD_YEAR, glm::vec3(0.0f, 1.0f, 0.0f));
+        model = glm::rotate(model, (float)glfwGetTime() / MERCURY_ORBITAL_PERIOD_YEAR, glm::vec3(0.0f, 1.0f, 0.0f));
         model = glm::translate(model, glm::vec3(start, 0.0f, 0.0f));
         model = glm::rotate(model, (float)(360 - MERCURY_ROTATION_AXIS), glm::vec3(1.0f, 0.0f, 1.0f));
         model = glm::rotate(model, (float)90.0, glm::vec3(1.0f, 0.0f, 0.0f));
@@ -191,7 +191,7 @@ int solarScaledSize()
         drawSphere(mercury, planetShader, false);
 
         model = glm::mat4(1.0f);
-        //model = glm::rotate(model, (float)glfwGetTime() / VENUS_ORBITAL_PERIOD_YEAR, glm::vec3(0.0f, 1.0f, 0.0f));
+        model = glm::rotate(model, (float)glfwGetTime() / VENUS_ORBITAL_PERIOD_YEAR, glm::vec3(0.0f, 1.0f, 0.0f));
         model = glm::translate(model, glm::vec3(start + 1 * 5.0f, 0.0f, 0.0f));
         model = glm::rotate(model, (float)(360 - VENUS_ROTATION_AXIS), glm::vec3(1.0f, 0.0f, 1.0f));
         model = glm::rotate(model, (float)90.0, glm::vec3(1.0f, 0.0f, 0.0f));
@@ -200,7 +200,7 @@ int solarScaledSize()
         drawSphere(venus, planetShader, false);
 
         model = glm::mat4(1.0f);
-        //model = glm::rotate(model, (float)glfwGetTime() / EARTH_ORBITAL_PERIOD_YEAR, glm::vec3(0.0f, 1.0f, 0.0f));
+        model = glm::rotate(model, (float)glfwGetTime() / EARTH_ORBITAL_PERIOD_YEAR, glm::vec3(0.0f, 1.0f, 0.0f));
         model = glm::translate(model, glm::vec3(start + 2 * 5.0f, 0.0f, 0.0f));
         model = glm::rotate(model, (float)(360 - EARTH_ROTATION_AXIS), glm::vec3(1.0f, 0.0f, 1.0f));
         model = glm::rotate(model, (float)90.0, glm::vec3(1.0f, 0.0f, 0.0f));
@@ -209,7 +209,7 @@ int solarScaledSize()
         drawSphere(earth, planetShader, false);
 
         model = glm::mat4(1.0f);
-        //model = glm::rotate(model, (float)glfwGetTime() / MARS_ORBITAL_PERIOD_YEAR, glm::vec3(0.0f, 1.0f, 0.0f));
+        model = glm::rotate(model, (float)glfwGetTime() / MARS_ORBITAL_PERIOD_YEAR, glm::vec3(0.0f, 1.0f, 0.0f));
         model = glm::translate(model, glm::vec3(start + 3 * 5.0f, 0.0f, 0.0f));
         model = glm::rotate(model, (float)(360 - MARS_ROTATION_AXIS), glm::vec3(1.0f, 0.0f, 1.0f));
         model = glm::rotate(model, (float)90.0, glm::vec3(1.0f, 0.0f, 0.0f));
