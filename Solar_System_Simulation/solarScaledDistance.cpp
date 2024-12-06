@@ -1,6 +1,6 @@
 #include <header/solar.h>
 
-int solarScaledDistance()
+int solarScaledDistance(bool isBackgroundBlack)
 {
     // glfw: initialize and configure
     // ------------------------------
@@ -148,8 +148,14 @@ int solarScaledDistance()
 
         // render
         // ------ 
-        glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
-        //glClearColor(0.0f, 0.0f, 0.0f, 1.0f); // uncomment this line if you want black background (more space-like)
+        if (isBackgroundBlack)
+        {
+            glClearColor(0.0f, 0.0f, 0.0f, 1.0f); // black background, may be harder to see but is more space-like
+        }
+        else
+        {
+            glClearColor(0.1f, 0.1f, 0.1f, 1.0f); // grey background, easier to see
+        }
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         planetShader.use();

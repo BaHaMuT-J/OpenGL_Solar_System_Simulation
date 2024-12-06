@@ -21,8 +21,8 @@ void mouse_callback(GLFWwindow* window, double xpos, double ypos);
 void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
 void drawSphere(Sphere sphere, Shader shaderProgram, bool wireframe);
 unsigned int loadTexture(const char* path);
-int solarScaledSize();
-int solarScaledDistance();
+int solarScaledSize(bool isBackgroundBlack);
+int solarScaledDistance(bool isBackgroundBlack);
 
 // Constants
 extern const unsigned int SCR_WIDTH;

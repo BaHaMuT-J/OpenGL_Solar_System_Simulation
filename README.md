@@ -23,5 +23,7 @@ I use openGL to draw and simulate basic elements in solar system
 ## Resources
 
 https://learnopengl.com/Introduction
+
 https://www.songho.ca/opengl/gl_sphere.html
+
 https://planetpixelemporium.com/sun.html
